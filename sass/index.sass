@@ -1,0 +1,235 @@
+@import "procss"
+
+.docs
+  .sidebar
+    box-shadow: 2px 3px 5px #ededed
+
+.resources
+  li
+    padding: 15px 30px
+    transition: $base-transition
+    cursor: pointer
+    &:hover
+      border-top-right-radius: 50px
+      border-bottom-right-radius: 50px
+      i
+        color: #2196f3
+    i
+      margin-right: 10px
+  .active
+    border-top-right-radius: 50px
+    border-bottom-right-radius: 50px
+    font-size: 20px
+    background-color: #2196f3
+    color: #fff
+    &:hover
+      span
+        padding-left: 10px
+      i
+        color: #fff 
+    i
+      transform: rotate(90deg)
+      color: #fff
+
+.sub-menu
+  .active-link
+    color: #2196f3
+    font-weight: 600
+  span
+    display: block
+    cursor: pointer
+    font-size: 14px
+    &:is(:focus, :active)
+      text-decoration: underline
+    &:not(:last-child)
+      margin-bottom: 5px
+
+.copy-hex-code
+  position: relative
+  &:hover
+    .copy
+      display: block
+  .copy
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    font-size: 20px
+  .copy-left
+    left: -20px
+  .copy-right
+    right: -20px
+
+@media (max-width: 767px)
+  .copy-right
+    right: 0 !important
+    left: -20px
+
+.fixed-layout
+  @media (min-width: 768px)
+    .sidebar
+      position: fixed
+      top: 0
+      left: 0
+      bottom: 0
+      z-index: 5
+      background-color: #fff
+    .sections
+      width: 92%
+      padding-left: 35% !important
+  @media (min-width: 992px)
+    .sections
+      width: 92%
+      padding-left: 27% !important
+
+.new-feature.close
+  height: 0
+  overflow: hidden
+  white-space: nowrap
+.new-feature
+  height: 70px
+  transition: $base-transition
+.box-shadow-gen 
+  min-height: 100vh
+  .customization
+    &:hover
+      &::-webkit-scrollbar
+        opacity: 1
+    &::-webkit-scrollbar
+      width: 7px
+      opacity: 0
+    &::-webkit-scrollbar-thumb
+      background-color: #c5c5c5
+      border-radius: 10px
+      &:hover
+        background-color: #969494
+    &::-webkit-scrollbar-track
+      background-color: #f1f1f1
+  .preview
+    .demo
+      width: 400px
+      height: 300px
+      background-color: #fff
+  .customization
+    z-index: 10
+    .toggle-menu
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      background-color: #fff
+      width: 70px
+      height: 70px
+    .toggle-control
+      right: -70px
+      box-shadow: 3px 2px 10px #ddd
+      border-top-right-radius: 50%
+      border-bottom-right-radius: 50%
+    .toggle-shape
+      left: -70px
+      box-shadow: -3px 2px 10px #ddd
+      border-top-left-radius: 50%
+      border-bottom-left-radius: 50%
+@media (min-width: 992px)
+  .customization
+    position: relative
+    .toggle-menu
+      display: none
+@media (max-width: 991px)
+  .box-shadow-gen.toggle-shadow-menu
+    .control
+      left: 0
+      .toggle-control
+        i
+          transform: rotate(180deg)
+          color: $secondary
+  .box-shadow-gen.toggle-shape-menu
+    .shape
+      right: 0
+      .toggle-shape
+        i
+          transform: rotate(180deg)
+          color: $secondary
+  .preview
+    min-height: 100vh
+  .control, .shape
+    position: fixed
+    top: 0
+    bottom: 0
+    width: 350px
+    background-color: #fff
+    z-index: 10
+    transition: $base-transition
+    .box-appearance
+      height: calc(100% - 95px)
+      overflow-y: scroll
+      &::-webkit-scrollbar
+        width: 7px
+      &::-webkit-scrollbar-thumb
+        background-color: #c7c7c7
+        border-radius: 10px
+      &::-webkit-scrollbar-track
+        background-color: #ededed
+  .control
+    left: -350px
+  .shape
+    right: -350px
+.border-b
+  border-bottom: 2px solid #efefef
+.border-b-8
+  border-bottom: 1px solid #e4e4e4
+.horizantal-offset, .vertical-offset, .blur-radius, .spread-radius, .demo-border-radius, .demo-width, .demo-height
+  .title
+    flex: 1
+  .hz-number, .vr-number, .blur-number, .spread-number, .demo-border-radius-number, .demo-width-number, .demo-height-number
+    input
+      padding: 10px
+      max-width: 80px
+      border: 2px solid #e8e8e8
+      box-shadow: 0 2px 3px #f1f1f1
+      font-size: 20px
+      &:focus
+        border: 2px solid $secondary
+    .error
+      border: 1px solid $error
+  .demo-border-radius-number, .demo-width-number, .demo-height-number
+    input
+      box-shadow: none
+  .range-selector, .range-selector-demo
+    input[type="range"]
+      width: 100%
+      appearance: none
+      -webkit-appearance: none
+      height: 4px
+      opacity: .5
+      transition: $base-transition
+      &:hover
+        opacity: 1
+      &::-webkit-slider-thumb
+        appearance: none
+        -webkit-appearance: none
+        width: 20px
+        height: 20px
+        background-color: #1ac888
+        cursor: pointer
+        &:hover
+          width: 25px
+          height: 25px
+      &::-moz-range-thumb
+        width: 20px
+        height: 20px
+        background-color: #1ac888
+        cursor: pointer
+        &:hover
+          width: 25px
+          height: 25px
+
+.demo
+  box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-spread) var(--shadow-color) var(--shadow-style,)
+  border-radius: var(--border-radius)
+  width: var(--width) !important
+  height: var(--height) !important
+  background-color: var(--bg-color) !important
+  border: 5px solid var(--border-color)
+.copy-demo-code
+  top: 10px
+  left: 50%
+  transform: translateX(-50%)

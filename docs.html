@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation</title>
+  <link rel="stylesheet" href="build/css/index.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="js/main.js" defer></script>  
+</head>
+<body>
+  <header>
+    <div class="bg-info d-f align-items-center justify-space-between p-1">
+      <a href="index.html" class="btn-primary fs-sm text-white text-hover-white"><i class="fa-solid fa-arrow-left"></i></a>
+      <h1 class="nav-title text-white w-100 align-c">Documentation</h1>
+    </div>
+  </header>
+  <section class="pt-6 pb-6 align-c bg-info-light-9">
+    <h2 class="fs-xl text-info">ProCSS</h2>
+    <p class="fs-sm fw-6">Getting Started</p>
+  </section>
+  <section class="docs" id="docs">
+    <div class="row">
+      <div class="sidebar col-xs-12 col-sm-12 col-md-4 col-lg-3 p-1">
+        <h3 class="text-gray-light-3 mb-1 t-upper fw-6 fs-md">Resources</h3>
+        <ul class="resources">
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-8 p-1 pl-7 sections pl-xs-3 pl-lg-3">
+        <div class="section introduction">
+          <div class="info mb-2">
+            <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Introduction</h2>
+            <p class="lh-10 text-gray-dark-5">Get started with ProCSS. This tool is designed to help you design your site easily and quickly to save more time with ready-to-use tools.</p>
+          </div>
+          <div class="info mb-2">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Quick Start</h2>
+            <p class="lh-10 text-gray-dark-5">This tool gives you a lot of ready-made classes to use in your designs. The classes are prepared according to the <span class="text-purple fw-6">first letter</span> of each CSS property.</p>
+            <div class="box p-1 bg-gray-light-9 mt-1 ff-code mb-1">
+              <h4 class="mb-1">For example</h4>
+              <p class="mb-1">if you want to use <span class="bg-gray-light-8">line-height</span> class for your elements, just use the first letter of each word.</p>
+              <p class="fw-6 fs-sm">lh-1 means.</p>
+              <p>
+                < span class="lh-1">line height is set to <span class="text-purple fw-6">1.1</span> in this element< /span>
+              </p>
+            </div>
+            <div class="naming mt-2">
+              <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Naming Convension</h2>
+              <p class="fw-6 fs-sm text-purple mb-1">Padding</p>
+              <p><span class=""><span class="fw-6 bg-gray-light-7">pr</span> stands for </span><span class="ml-1 bg-purple-light-8 pl-1 pr-1">padding-right</span> Then assign a number to the property.</p>
+              <p><span class=""><span class="fw-6 bg-gray-light-7">pl</span> stands for </span><span class="ml-1 bg-purple-light-8 pl-1 pr-1">padding-left</span> Then assign a number to the property.</p>
+              <p><span class=""><span class="fw-6 bg-gray-light-7">pt</span> stands for </span><span class="ml-1 bg-purple-light-8 pl-1 pr-1">padding-top</span> Then assign a number to the property.</p>
+              <p><span class=""><span class="fw-6 bg-gray-light-7">pb</span> stands for </span><span class="ml-1 bg-purple-light-8 pl-1 pr-1">padding-bottom</span> Then assign a number to the property.</p>
+              <p class="fw-6 fs-sm text-purple mb-1 mt-1">Margin</p>
+              <p><span class=""><span class="fw-6 bg-gray-light-7">mr</span> stands for </span><span class="ml-1 bg-purple-light-8 pl-1 pr-1">margin-right</span> Then assign a number to the property.</p>
+              <p><span class=""><span class="fw-6 bg-gray-light-7">ml</span> stands for </span><span class="ml-1 bg-purple-light-8 pl-1 pr-1">margin-left</span> Then assign a number to the property.</p>
+              <p><span class=""><span class="fw-6 bg-gray-light-7">mt</span> stands for </span><span class="ml-1 bg-purple-light-8 pl-1 pr-1">margin-top</span> Then assign a number to the property.</p>
+              <p><span class=""><span class="fw-6 bg-gray-light-7">mb</span> stands for </span><span class="ml-1 bg-purple-light-8 pl-1 pr-1">margin-bottom</span> Then assign a number to the property.</p>
+            </div>
+          </div>
+        </div>
+        <div class="section cross-browser-compatability d-n">
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Cross Browser Compatability</h2>
+            <p class="lh-10 text-gray-dark-5">Cross-browser compatibility is the ability of a website or web application to function across different browsers and degrade gracefully when browser features are absent or lacking.</p>
+          </div>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Quick Start</h2>
+            <p class="lh-10 text-gray-dark-5"><span class="text-info fw-6 fs-sm">ProCSS</span> cross-check the application for providing the native features across different sets of browsers. If a browser doesn’t support the code then our application should be in a position to provide a different set of code which will run on that particular browser. This will ensure that the application’s basic features are available to the users in any case.</p>
+            <div class="box p-1 bg-gray-light-9 mt-1 ff-code mb-1">
+              <h4 class="mb-1">For example</h4>
+              <p class="mb-1"><span class="bg-gray-light-8">box-sizing</span> CSS property is not supported in all browsers, and to supported you should add all the prefix to special browsers support to work.</p>
+              <p class="fw-6 fs-sm">Property Prefix</p>
+              <p>Android: -webkit-</p>
+              <p>Chrome: -webkit-</p>
+              <p>Firefox: -moz-</p>
+              <p>Internet Explorer: -ms-</p>
+              <p>iOS: -webkit-</p>
+              <p>Opera: -o-</p>
+              <p>Safari: -webkit-</p>
+            </div>
+            <div class="box bg-purple text-white p-4 br-3">
+              <i class="fa-solid fa-circle-exclamation fs-md d-b"></i>
+              <span class="d-b mt-1"> Note that most of the properties are supported in most browsers. You can check for unsupported properties <a href="https://caniuse.com/" class="fw-6 td-under">from here</a></span>
+            </div>
+            <div class="naming mt-1">
+              <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Example of unsupported properties.</h2>
+              <p class="fw-6 fs-sm text-purple mb-1">box-sizing</p>
+              <div class="code ff-code p-1 bg-gray-light-9">
+                <p>-webkit-box-sizing: border-box</p>
+                <p>-moz-box-sizing: border-box</p>
+                <p>box-sizing: border-box</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section grid d-n">
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Grid</h2>
+            <p class="lh-10 text-gray-dark-5">Our powerful mobile-first flexbox grid to build layouts of all shapes and sizes of twelve column system, five default responsive tiers.</p>
+          </div>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Quick Start</h2>
+            <p class="lh-10 text-gray-dark-5"><span class="text-info fw-6 fs-sm">ProCSS</span> grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.</p>
+            <div class="box p-1 bg-gray-light-9 mt-1 ff-code mb-1">
+              <h4 class="mb-1">Grid example</h4>
+              <div class="row justify-center">
+                <div class="col-sm-12 bg-gray-light-5 p-1 br-2 align-c mb-1">
+                  <h4>small screens</h4>
+                  <span class="d-b mt-1">full width</span>
+                  <span>col-sm- { number of columns to take at small screens}</span>
+                </div>
+                <div class="col-sm-5 bg-gray-light-5 p-1 br-2 align-c mr-1">5 columns at small screens</div>
+                <div class="col-sm-5 bg-gray-light-5 p-1 br-2 align-c">5 columns at small screens</div>
+              </div>
+            </div>
+          </div>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Grid Options</h2>
+            <div class="box bg-purple text-white p-4 br-3 mb-3">
+              <i class="fa-solid fa-circle-exclamation fs-md d-b"></i>
+              <p class="">ProCSS uses a 12 columns grid system to distribute content in the web pages.</p>
+            </div>
+            <div class="row justify-center gap-2" style="gap: 20px">
+              <div class="bg-gray-light-9 col-sm-12 col-md-5 col-lg-5">
+                <h2 class="card-title">Extra small screens</h2>
+                <div class="card-body">
+                  <p>Class Prefix: <span class="text-purple ml-1">col-xs-</span></p>
+                  <p>Breakpoint: <span class="text-purple ml-1">0 and above to 576px</span></p>
+                </div>
+              </div>
+              <div class="bg-gray-light-9 col-sm-12 col-md-5 col-lg-5">
+                <h2 class="card-title">small screens</h2>
+                <div class="card-body">
+                  <p>Class Prefix: <span class="text-purple ml-1">col-sm-</span></p>
+                  <p>Breakpoint: <span class="text-purple ml-1">576px and greater</span></p>
+                </div>
+              </div>
+              <div class="bg-gray-light-9 col-sm-12 col-md-5 col-lg-5">
+                <h2 class="card-title">medium screens</h2>
+                <div class="card-body">
+                  <p>Class Prefix: <span class="text-purple ml-1">col-md-</span></p>
+                  <p>Breakpoint: <span class="text-purple ml-1">768px and greater</span></p>
+                </div>
+              </div>
+              <div class="bg-gray-light-9 col-sm-12 col-md-5 col-lg-5">
+                <h2 class="card-title">large screens</h2>
+                <div class="card-body">
+                  <p>Class Prefix: <span class="text-purple ml-1">col-lg-</span></p>
+                  <p>Breakpoint: <span class="text-purple ml-1">992px and greater</span></p>
+                </div>
+              </div>
+              <div class="bg-gray-light-9 col-sm-12 col-md-5 col-lg-5">
+                <h2 class="card-title">extra large screens</h2>
+                <div class="card-body">
+                  <p>Class Prefix: <span class="text-purple ml-1">col-xl-</span></p>
+                  <p>Breakpoint: <span class="text-purple ml-1">1200px and greater</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="sm-screens mt-1 mb-1 bg-gray-light-9 p-2">
+              <h2>Small Screens</h2>
+              <p class="mb-1">Breakpoint at: <span class="fw-6 text-purple">576px</span></p>
+              <div class="row justify-space-between">
+                <div class="col-sm-4 bg-gray-light-5 p-1">4 columns</div>
+                <div class="col-sm-4 bg-gray-light-6 p-1">4 columns</div>
+                <div class="col-sm-4 bg-gray-light-7 p-1">4 columns</div>
+                <div class="col-sm-12 bg-gray-light-4 p-1">12 columns</div>
+                <div class="col-sm-6 bg-gray-light-7 p-1">6 columns</div>
+                <div class="col-sm-6 bg-gray-light-8 p-1">6 columns</div>
+                <div class="col-sm-3 bg-gray-light-3 p-1">3 columns</div>
+                <div class="col-sm-9 bg-gray-light-4 p-1">9 columns</div>
+              </div>
+            </div>
+            <div class="md-screens mt-1 mb-1 bg-gray-light-9 p-2">
+              <h2>Medium Screens</h2>
+              <p class="mb-1">Breakpoint at: <span class="fw-6 text-purple">767px</span></p>
+              <div class="row justify-space-between">
+                <div class="col-md-4 bg-gray-light-5 p-1">4 columns</div>
+                <div class="col-md-4 bg-gray-light-6 p-1">4 columns</div>
+                <div class="col-md-4 bg-gray-light-7 p-1">4 columns</div>
+                <div class="col-md-12 bg-gray-light-4 p-1">12 columns</div>
+                <div class="col-md-6 bg-gray-light-7 p-1">6 columns</div>
+                <div class="col-md-6 bg-gray-light-8 p-1">6 columns</div>
+                <div class="col-md-3 bg-gray-light-3 p-1">3 columns</div>
+                <div class="col-md-9 bg-gray-light-4 p-1">9 columns</div>
+              </div>
+            </div>
+            <div class="md-screens mt-1 mb-1 bg-gray-light-9 p-2">
+              <h2>large Screens</h2>
+              <p class="mb-1">Breakpoint at: <span class="fw-6 text-purple">992px</span></p>
+              <div class="row justify-space-between">
+                <div class="col-lg-12 bg-gray-light-5 p-1">12 columns</div>
+                <div class="col-lg-3 bg-gray-light-6 p-1">3 columns</div>
+                <div class="col-lg-5 bg-gray-light-7 p-1">5 columns</div>
+                <div class="col-lg-4 bg-gray-light-4 p-1">4 columns</div>
+                <div class="col-lg-6 bg-gray-light-7 p-1">6 columns</div>
+                <div class="col-lg-6 bg-gray-light-8 p-1">6 columns</div>
+                <div class="col-lg-2 bg-gray-light-3 p-1">2 columns</div>
+                <div class="col-lg-10 bg-gray-light-4 p-1">10 columns</div>
+              </div>
+            </div>
+            <div class="md-screens mt-1 mb-1 bg-gray-light-9 p-2">
+              <h2>extra large Screens</h2>
+              <p class="mb-1">Breakpoint at: <span class="fw-6 text-purple">1200px</span></p>
+              <div class="row justify-space-between">
+                <div class="col-xl-12 bg-gray-light-5 p-1">12 columns</div>
+                <div class="col-xl-3 bg-gray-light-6 p-1">3 columns</div>
+                <div class="col-xl-5 bg-gray-light-7 p-1">5 columns</div>
+                <div class="col-xl-4 bg-gray-light-4 p-1">4 columns</div>
+                <div class="col-xl-6 bg-gray-light-7 p-1">6 columns</div>
+                <div class="col-xl-6 bg-gray-light-8 p-1">6 columns</div>
+                <div class="col-xl-2 bg-gray-light-3 p-1">2 columns</div>
+                <div class="col-xl-10 bg-gray-light-4 p-1">10 columns</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section media-queries d-n">
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Media Queries</h2>
+            <p class="lh-10 text-gray-dark-5">Using media queries are technique for delivering a tailored style sheet (responsive web design) to desktops, laptops, tablets, and mobile phones.</p>
+          </div>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Quick Start</h2>
+            <p class="lh-10 text-gray-dark-5"><span class="text-info fw-6 fs-sm">ProCSS</span> Adapt your designs to different screen sizes using CSS media queries.</p>
+            <div class="box ff-code bg-gray-light-9 p-1 mt-1 mb-1">
+              <div class="box mb-1">
+                <h3>Extra small screens / Phone <span class="bg-purple pl-1 pr-1 text-white">0</span></h3>
+              </div>
+              <div class="box mb-1">
+                <h3>Small screens / Phone <span class="bg-purple pl-1 pr-1 text-white">576</span></h3>
+              </div>
+              <div class="box mb-1">
+                <h3>Medium screens / Phone <span class="bg-purple pl-1 pr-1 text-white">767</span></h3>
+              </div>
+              <div class="box mb-1">
+                <h3>Large screens / Phone <span class="bg-purple pl-1 pr-1 text-white">992</span></h3>
+              </div>
+              <div class="box">
+                <h3>Extra Large screens / Phone <span class="bg-purple pl-1 pr-1 text-white">1200</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Prefix</h2>
+            <p class="lh-10 text-gray-dark-5">to customize your design at any type of screens use </p>
+            <div class="box ff-code bg-gray-light-9 p-1 mt-1 mb-1">
+              <div class="box mb-1">
+                <h4>Extra small screens</h4>
+                <div class="box p-1 bg-gray-light-7 mt-1">
+                  <p>col-xs- <span class="bg-purple pl-1 pr-1 text-white fw-6">for extra small screens</span></p>
+                  <p>pl-xs- {padding-left at extra small screens} <span class="bg-purple pl-1 pr-1 text-white fw-6">for extra small screens</span></p>
+                  <p>ml-xs- {margin-left at extra small screens}<span class="bg-purple pl-1 pr-1 text-white fw-6">for extra small screens</span></p>
+                </div>
+              </div>
+              <div class="box mb-1">
+                <h4>Small screens</h4>
+                <div class="box p-1 bg-gray-light-7 mt-1">
+                  <p>col-sm- <span class="bg-purple pl-1 pr-1 text-white fw-6">for small screens</span></p>
+                  <p>pl-sm- {padding-left at small screens} <span class="bg-purple pl-1 pr-1 text-white fw-6">for small screens</span></p>
+                  <p>ml-sm- {margin-left at small screens}<span class="bg-purple pl-1 pr-1 text-white fw-6">for small screens</span></p>
+                </div>
+              </div>
+              <div class="box mb-1">
+                <h4>Medium screens</h4>
+                <div class="box p-1 bg-gray-light-7 mt-1">
+                  <p>col-md- <span class="bg-purple pl-1 pr-1 text-white fw-6">for medium screens</span></p>
+                  <p>pl-md- {padding-left at medium screens} <span class="bg-purple pl-1 pr-1 text-white fw-6">for medium screens</span></p>
+                  <p>ml-md- {margin-left at medium screens}<span class="bg-purple pl-1 pr-1 text-white fw-6">for medium screens</span></p>
+                </div>
+              </div>
+              <div class="box mb-1">
+                <h4>Large screens</h4>
+                <div class="box p-1 bg-gray-light-7 mt-1">
+                  <p>col-lg- <span class="bg-purple pl-1 pr-1 text-white fw-6">for large screens</span></p>
+                  <p>pl-lg- {padding-left at large screens} <span class="bg-purple pl-1 pr-1 text-white fw-6">for large screens</span></p>
+                  <p>ml-lg- {margin-left at large screens}<span class="bg-purple pl-1 pr-1 text-white fw-6">for large screens</span></p>
+                </div>
+              </div>
+              <div class="box">
+                <h4>Extra Large screens</h4>
+                <div class="box p-1 bg-gray-light-7 mt-1">
+                  <p>col-xl- <span class="bg-purple pl-1 pr-1 text-white fw-6">for extra large screens</span></p>
+                  <p>pl-xl- {padding-left at extra large screens} <span class="bg-purple pl-1 pr-1 text-white fw-6">for extra large screens</span></p>
+                  <p>ml-xl- {margin-left at extra large screens}<span class="bg-purple pl-1 pr-1 text-white fw-6">for extra large screens</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section utilities-for-layout d-n">
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Utilities for layout</h2>
+            <div class="box mb-1">
+              <h2>Changing Display</h2>
+              <div class="hodler bg-gray-light-9 p-1">
+                <div class="box mb-1">
+                  <h3>d-f <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">display: flex;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>d-b <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">display: block;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>d-i-b <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">display: inline-block;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>d-n <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">display: none;</span></h3>
+                </div>
+                <div class="box">
+                  <h3>d-g <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">display: grid;</span></h3>
+                </div>
+              </div>
+            </div>
+            <div class="box mb-1">
+              <h2>Padding & Margins</h2>
+              <p>Based on <span class="text-purple">0.75rem</span> starter value for both padding and margin</p>
+              <div class="hodler bg-gray-light-9 p-1">
+                <div class="box mb-1">
+                  <h3>p-1 <span class="bg-purple pl-1 pr-1 text-white ml-2">padding: 1.5rem;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>pl-1 <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">padding-left: 1.5rem;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>pr-1 <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">padding-right: 1.5rem;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>pt-1 <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">padding-top: 1.5rem;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>pb-1 <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">padding-bottom: 1.5rem;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>pb-xs-1 <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">padding-bottom: 1.5rem; at extra small screens</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>pb-sm-1 <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">padding-bottom: 1.5rem; at small screens</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>pb-md-1 <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">padding-bottom: 1.5rem; at medium screens</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>pb-lg-1 <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">padding-bottom: 1.5rem; at large screens</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>pb-xl-1 <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">padding-bottom: 1.5rem; at extra large screens</span></h3>
+                </div>
+                <div class="notice fw-6">values are applied same for margin.</div>
+              </div>
+            </div>
+            <div class="box mb-1">
+              <h2>Flexbox options</h2>
+              <div class="hodler bg-gray-light-9 p-1">
+                <div class="box mb-1">
+                  <h3>d-f <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">display: flex;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>justify-center <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">justify-content: center;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>justify-space-between <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">justify-content: center;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>justify-flex-start <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">justify-content: flex-start;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>justify-flex-end <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">justify-content: flex-end;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>align-items-center <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">align-items: center;</span></h3>
+                </div>
+                <div class="box mb-1">
+                  <h3>align-items-flex-end <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">align-items: flex-end;</span></h3>
+                </div>
+                <div class="box">
+                  <h3>align-items-flex-start <span class="fw-4 bg-purple pl-1 pr-1 text-white ml-2">align-items: flex-start;</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section alerts d-n">
+          <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Alerts</h2>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Alerts Filled</h2>
+            <div class="alert">default alert</div>
+            <div class="alert-primary text-white">this is an alert primary</div>
+            <div class="alert-secondary text-white">this is an alert secondary</div>
+            <div class="alert-error text-white">this is an alert error</div>
+            <div class="alert-info text-white">this is an alert info</div>
+            <div class="alert-success text-white">this is an alert success</div>
+            <div class="alert-warning text-white">this is an alert warning</div>
+            <h4 class="mb-1 mt-1 fs-md text-gray-dark-7 ff-secondary">Secondary alerts - from colors palette</h4>
+            <div class="alert-blue text-white">this is an alert blue</div>
+            <div class="alert-black text-white">this is an alert black</div>
+            <div class="alert-red text-white">this is an alert red</div>
+            <div class="alert-yellow">this is an alert yellow</div>
+            <div class="alert-purple text-white">this is an alert purple</div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Alerts Outlined</h2>
+            <div class="alert-outlined-primary">this is an outlined alert primary</div>
+            <div class="alert-outlined-secondary">this is an outlined alert secondary</div>
+            <div class="alert-outlined-error">this is an outlined alert error</div>
+            <div class="alert-outlined-info">this is an outlined alert info</div>
+            <div class="alert-outlined-success">this is an outlined alert success</div>
+            <div class="alert-outlined-warning">this is an outlined alert warning</div>
+            <h4 class="mb-1 mt-1 fs-md text-gray-dark-7 ff-secondary">Secondary outlined alerts - from colors palette</h4>
+            <div class="alert-outlined-blue">this is an outlined alert blue</div>
+            <div class="alert-outlined-black">this is an outlined alert black</div>
+            <div class="alert-outlined-red">this is an outlined alert red</div>
+            <div class="alert-outlined-yellow">this is an alert ye outlinedllow</div>
+            <div class="alert-outlined-purple">this is an outlined alert purple</div>
+          </div>
+        </div>
+        <div class="section badges d-n">
+          <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Badges</h2>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Badges Filled</h2>
+            <div class="bg-gray-light-9 p-1 mb-1">this is a <span class="fw-6">default</span> badge <span class="badge">new</span></div>
+            <div class="bg-gray-light-9 p-1 mb-1">this is a <span class="fw-6">primary</span> badge <span class="badge-primary">new</span></div>
+            <div class="bg-gray-light-9 p-1 mb-1">this is a <span class="fw-6">secondary</span> badge <span class="badge-secondary">new</span></div>
+            <div class="bg-gray-light-9 p-1 mb-1">this is a <span class="fw-6">info</span> badge <span class="badge-info">new</span></div>
+            <div class="bg-gray-light-9 p-1 mb-1">this is a <span class="fw-6">success</span> badge <span class="badge-success">new</span></div>
+            <div class="bg-gray-light-9 p-1 mb-1">this is a <span class="fw-6">warning</span> badge <span class="badge-warning">new</span></div>
+            <div class="bg-gray-light-9 p-1 mb-1">this is a <span class="fw-6">error</span> badge <span class="badge-error">new</span></div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Badges Outlined</h2>
+            <div class="bg-gray-light-9 p-1 mb-1">this is an outlined <span class="fw-6">default</span> badge <span class="badge">new</span></div>
+            <div class="bg-gray-light-9 p-1 mb-1">this is an outlined <span class="fw-6">primary</span> badge <span class="badge-outlined-primary">new</span></div>
+            <div class="bg-gray-light-9 p-1 mb-1">this is an outlined <span class="fw-6">secondary</span> badge <span class="badge-outlined-secondary">new</span></div>
+            <div class="bg-gray-light-9 p-1 mb-1">this is an outlined <span class="fw-6">info</span> badge <span class="badge-outlined-info">new</span></div>
+            <div class="bg-gray-light-9 p-1 mb-1">this is an outlined <span class="fw-6">success</span> badge <span class="badge-outlined-success">new</span></div>
+            <div class="bg-gray-light-9 p-1 mb-1">this is an outlined <span class="fw-6">warning</span> badge <span class="badge-outlined-warning">new</span></div>
+            <div class="bg-gray-light-9 p-1 mb-1">this is an outlined <span class="fw-6">error</span> badge <span class="badge-outlined-error">new</span></div>
+          </div>
+        </div>
+        <div class="section buttons d-n">
+          <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Buttons</h2>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Buttons Filled</h2>
+            <a href="/" class="btn">Default Button</a>
+            <a href="/" class="btn btn-primary">Primary Button</a>
+            <a href="/" class="btn btn-secondary">Secondary Button</a>
+            <a href="/" class="btn btn-info">Info Button</a>
+            <a href="/" class="btn btn-success">Success Button</a>
+            <a href="/" class="btn btn-warning">Warning Button</a>
+            <a href="/" class="btn btn-error">Error Button</a>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Buttons Outlined</h2>
+            <a href="/" class="btn btn-outlined-primary">Primary Outlined Button</a>
+            <a href="/" class="btn btn-outlined-secondary">Secondary Outlined Button</a>
+            <a href="/" class="btn btn-outlined-info">Info Outlined Button</a>
+            <a href="/" class="btn btn-outlined-success">Success Outlined Button</a>
+            <a href="/" class="btn btn-outlined-warning">Warning Outlined Button</a>
+            <a href="/" class="btn btn-outlined-error">Error Outlined Button</a>
+          </div>
+        </div>
+        <div class="section navs d-n">
+          <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Navs</h2>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Navbars</h2>
+            <nav class="navbar">
+              <div class="site-title">Default Navbar</div>
+              <p>some content here</p>
+            </nav>
+            <nav class="navbar-primary">
+              <div class="site-title">Primary Navbar</div>
+              <p>some content here</p>
+            </nav>
+            <nav class="navbar-secondary">
+              <div class="site-title">Secondary Navbar</div>
+              <p>some content here</p>
+            </nav>
+            <nav class="navbar-info">
+              <div class="site-title">Info Navbar</div>
+              <p>some content here</p>
+            </nav>
+            <nav class="navbar-success">
+              <div class="site-title">Success Navbar</div>
+              <p>some content here</p>
+            </nav>
+            <nav class="navbar-warning">
+              <div class="site-title">Warning Navbar</div>
+              <p>some content here</p>
+            </nav>
+            <nav class="navbar-error">
+              <div class="site-title">Error Navbar</div>
+              <p>some content here</p>
+            </nav>
+          </div>
+        </div>
+        <div class="section cards d-n">
+          <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Cards</h2>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Cards</h2>
+            <div class="card w-50 mb-1">
+              <div class="card-title">Card Title</div>
+              <div class="card-subtitle">Card Subtitle</div>
+              <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aperiam ullam est asperiores mollitia hic?</div>
+              <div class="card-link"><div class="btn-primary">card link</div></div>
+            </div>
+            <div class="card w-75 mb-1">
+              <div class="card-title">Card Title</div>
+              <div class="card-subtitle">Card Subtitle</div>
+              <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aperiam ullam est asperiores mollitia hic?</div>
+              <div class="card-link"><div class="btn-primary">card link</div></div>
+            </div>
+            <div class="card w-100 mb-1">
+              <div class="card-title">Card Title</div>
+              <div class="card-subtitle">Card Subtitle</div>
+              <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aperiam ullam est asperiores mollitia hic?</div>
+              <div class="card-link"><div class="btn-primary">card link</div></div>
+            </div>
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Grid Cards</h2>
+            <div class="row justify-center gap-1">
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <div class="card-title">Card Title</div>
+                  <div class="card-subtitle">Card Subtitle</div>
+                  <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aperiam ullam est asperiores mollitia hic?</div>
+                  <div class="card-link"><div class="btn-outlined-info">card link</div></div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <div class="card-title">Card Title</div>
+                  <div class="card-subtitle">Card Subtitle</div>
+                  <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aperiam ullam est asperiores mollitia hic?</div>
+                  <div class="card-link"><div class="btn-outlined-success">card link</div></div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="card">
+                  <div class="card-title">Card Title</div>
+                  <div class="card-subtitle">Card Subtitle</div>
+                  <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aperiam ullam est asperiores mollitia hic?</div>
+                  <div class="card-link"><div class="btn-outlined-warning">card link</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section spacing d-n">
+          <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Spacing</h2>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Quick Start</h2>
+            <p class="lh-10 text-gray-dark-5">ProCSS includes a wide range of shorthand responsive margin and padding utility classes to modify an element's appearance.</p>
+          </div>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Usage</h2>
+            <p class="lh-10 text-gray-dark-5">The classes are named using the format <span class="text-purple">{property}{sides}-{size}</span> for xs and <span class="text-purple">{property}{sides}-{breakpoint}-{size}</span> for <span class="text-purple">sm, md, lg, </span> and <span class="text-purple">xl</span>.</p>
+            <div class="box-info mt-1 mb-1">
+              <h3 class="fw-5">Where property is one of:</h3>
+              <div class="props ml-1">
+                <div class="box mt-1">
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">m -</span>
+                    <span>for classes that set <span class="text-purple">margin</span>.</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">p -</span>
+                    <span>for classes that set <span class="text-purple">padding</span>.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box-info mt-1 mb-1">
+              <h3 class="fw-5">Where sides is one of:</h3>
+              <div class="props ml-1">
+                <div class="box mt-1">
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">t -</span>
+                    <span>for classes that set <span class="text-purple">margin-top</span> or <span class="text-purple">padding-top</span>.</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">b -</span>
+                    <span>for classes that set <span class="text-purple">margin-bottom</span> or <span class="text-purple">padding-bottom</span>.</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">l -</span>
+                    <span>for classes that set <span class="text-purple">margin-left</span> or <span class="text-purple">padding-left</span>.</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">r -</span>
+                    <span>for classes that set <span class="text-purple">margin-right</span> or <span class="text-purple">padding-right</span>.</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple t-upper">blank</span>
+                    <span>for classes that set <span class="text-purple">margin</span> or <span class="text-purple">padding</span> on all sides.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box-info mt-1 mb-1">
+              <h3 class="fw-5">Where size is one of:</h3>
+              <div class="props ml-1">
+                <div class="box mt-1">
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">0</span>
+                    <span>for classes that eliminate the <span class="text-purple">margin</span> or <span class="text-purple">padding</span> by setting it to 0 .</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">1 -</span>
+                    <span>for classes that set the <span class="text-purple">margin</span> or <span class="text-purple">padding</span> to 0.75rem * 1</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">2 -</span>
+                    <span>for classes that set the <span class="text-purple">margin</span> or <span class="text-purple">padding</span> to 0.75rem * 2</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">3 -</span>
+                    <span>for classes that set the <span class="text-purple">margin</span> or <span class="text-purple">padding</span> to 0.75rem * 3</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">4 -</span>
+                    <span>for classes that set the <span class="text-purple">margin</span> or <span class="text-purple">padding</span> to 0.75rem * 4</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">5 -</span>
+                    <span>for classes that set the <span class="text-purple">margin</span> or <span class="text-purple">padding</span> to 0.75rem * 5</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">6 -</span>
+                    <span>for classes that set the <span class="text-purple">margin</span> or <span class="text-purple">padding</span> to 0.75rem * 6</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box-info mt-1 mb-1">
+              <h3 class="fw-5">Where breakpoint is one of:</h3>
+              <div class="props ml-1">
+                <div class="box mt-1">
+                  <div class="mb-1">
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">xs -</span>
+                    <span>for classes that set <span class="text-purple">margin</span> or <span class="text-purple">padding</span> at extra small screen.</span>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">p-xs-0</span> removes padding at extra small screens.</p>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">m-xs-0</span> removes margin at extra small screens.</p>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">ml-xs-2</span> add margin-left at extra small screens.</p>
+                  </div>
+                  <div class="mb-1">
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">sm -</span>
+                    <span>for classes that set <span class="text-purple">margin</span> or <span class="text-purple">padding</span> at small screen.</span>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">p-sm-0</span> removes padding at small screens.</p>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">m-sm-0</span> removes margin at small screens.</p>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">ml-sm-2</span> add margin-left at small screens.</p>
+                  </div>
+                  <div class="mb-1">
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">md -</span>
+                    <span>for classes that set <span class="text-purple">margin</span> or <span class="text-purple">padding</span> at medium screen.</span>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">p-md-0</span> removes padding at medium screens.</p>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">m-md-0</span> removes margin at medium screens.</p>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">ml-md-2</span> add margin-left at medium screens.</p>
+                  </div>
+                  <div class="mb-1">
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">lg -</span>
+                    <span>for classes that set <span class="text-purple">margin</span> or <span class="text-purple">padding</span> at large screen.</span>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">p-lg-0</span> removes padding at large screens.</p>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">m-lg-0</span> removes margin at large screens.</p>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">ml-lg-2</span> add margin-left at large screens.</p>
+                  </div>
+                  <div class="mb-1">
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">xl -</span>
+                    <span>for classes that set <span class="text-purple">margin</span> or <span class="text-purple">padding</span> at extra large screen.</span>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">p-xl-0</span> removes padding at extra large screens.</p>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">m-xl-0</span> removes margin at extra large screens.</p>
+                    <p class="ml-2"><span class="bg-purple-light-9 text-purple fw-6 pl-1 pr-1 br-2">ml-xl-2</span> add margin-left at extra large screens.</p>
+                    <p class="f-style-italic mt-1">applied for both margin and padding at all sides.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section bg-colors d-n">
+          <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Background Colors Palette</h2>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Primary Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-primary p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-light-1 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-light-2 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-light-3 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-light-4 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-light-5 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-light-6 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-light-7 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-light-8 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-light-9 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 bg-primary p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-dark-1 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-dark-2 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-dark-3 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-dark-4 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-dark-5 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-dark-6 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-dark-7 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-dark-8 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-primary-dark-9 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Secondary Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-secondary p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-light-1 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-light-2 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-light-3 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-light-4 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-light-5 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-light-6 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-light-7 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-light-8 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-light-9 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 bg-secondary p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-dark-1 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-dark-2 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-dark-3 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-dark-4 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-dark-5 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-dark-6 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-dark-7 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-dark-8 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-secondary-dark-9 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Info Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-info p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-light-1 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-light-2 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-light-3 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-light-4 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-light-5 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-light-6 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-light-7 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-light-8 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-light-9 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 bg-info p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-dark-1 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-dark-2 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-dark-3 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-dark-4 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-dark-5 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-dark-6 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-dark-7 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-dark-8 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-info-dark-9 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Error Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-error p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-light-1 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-light-2 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-light-3 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-light-4 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-light-5 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-light-6 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-light-7 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-light-8 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-light-9 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 bg-error p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-dark-1 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-dark-2 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-dark-3 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-dark-4 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-dark-5 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-dark-6 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-dark-7 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-dark-8 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-error-dark-9 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Success Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-success p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-light-1 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-light-2 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-light-3 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-light-4 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-light-5 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-light-6 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-light-7 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-light-8 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-light-9 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 bg-success p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-dark-1 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-dark-2 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-dark-3 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-dark-4 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-dark-5 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-dark-6 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-dark-7 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-dark-8 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-success-dark-9 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Warning Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-warning p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-light-1 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-light-2 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-light-3 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-light-4 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-light-5 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-light-6 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-light-7 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-light-8 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-light-9 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 bg-warning p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-dark-1 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-dark-2 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-dark-3 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-dark-4 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-dark-5 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-dark-6 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-dark-7 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-dark-8 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-warning-dark-9 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Purple Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-purple p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-light-1 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-light-2 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-light-3 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-light-4 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-light-5 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-light-6 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-light-7 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-light-8 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-light-9 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 bg-purple p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-dark-1 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-dark-2 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-dark-3 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-dark-4 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-dark-5 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-dark-6 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-dark-7 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-dark-8 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-purple-dark-9 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Gray Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-gray p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-light-1 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-light-2 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-light-3 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-light-4 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-light-5 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-light-6 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-light-7 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-light-8 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-light-9 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 bg-gray p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-dark-1 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-dark-2 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-dark-3 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-dark-4 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-dark-5 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-dark-6 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-dark-7 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-dark-8 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-gray-dark-9 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Black Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-black p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-black-light-1 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-black-light-2 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-black-light-3 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-black-light-4 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-black-light-5 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-black-light-6 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-black-light-7 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-black-light-8 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-black-light-9 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6">
+                <div class="col-xs-12 bg-black p-3 copy-hex-code cursor-pointer"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <p class="f-style-italic">only one variation of dark available for black color.</p>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Yellow Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-yellow p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-light-1 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-light-2 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-light-3 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-light-4 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-light-5 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-light-6 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-light-7 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-light-8 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-light-9 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 bg-yellow p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-dark-1 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-dark-2 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-dark-3 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-dark-4 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-dark-5 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-dark-6 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-dark-7 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-dark-8 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-yellow-dark-9 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Blue Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-blue p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-light-1 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-light-2 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-light-3 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-light-4 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-light-5 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-light-6 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-light-7 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-light-8 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-light-9 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 bg-blue p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-dark-1 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-dark-2 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-dark-3 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-dark-4 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-dark-5 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-dark-6 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-dark-7 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-dark-8 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-blue-dark-9 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Red Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-red p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-light-1 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-light-2 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-light-3 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-light-4 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-light-5 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-light-6 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-light-7 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-light-8 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-light-9 p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 bg-red p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-dark-1 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-dark-2 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-dark-3 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-dark-4 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-dark-5 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-dark-6 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-dark-7 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-dark-8 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 bg-red-dark-9 p-3 copy-hex-code"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section text-colors d-n">
+          <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Text Colors Palette</h2>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Primary Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-primary p-3 copy-hex-code">
+                  <div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div>
+                </div>
+                <div class="col-xs-12 text-primary-light-1 p-1 copy-hex-code">text-primary-light-1<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-light-2 p-1 copy-hex-code">text-primary-light-2<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-light-3 p-1 copy-hex-code">text-primary-light-3<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-light-4 p-1 copy-hex-code">text-primary-light-4<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-light-5 p-1 copy-hex-code">text-primary-light-5<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-light-6 p-1 copy-hex-code">text-primary-light-6<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-light-7 p-1 copy-hex-code">text-primary-light-7<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-light-8 p-1 copy-hex-code">text-primary-light-8<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-light-9 p-1 copy-hex-code">text-primary-light-9<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 p-3"></div>
+                <div class="col-xs-12 text-primary-dark-1 p-1 copy-hex-code">text-primary-dark-1<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-dark-2 p-1 copy-hex-code">text-primary-dark-2<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-dark-3 p-1 copy-hex-code">text-primary-dark-3<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-dark-4 p-1 copy-hex-code">text-primary-dark-4<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-dark-5 p-1 copy-hex-code">text-primary-dark-5<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-dark-6 p-1 copy-hex-code">text-primary-dark-6<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-dark-7 p-1 copy-hex-code">text-primary-dark-7<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-dark-8 p-1 copy-hex-code">text-primary-dark-8<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-primary-dark-9 p-1 copy-hex-code">text-primary-dark-9<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Secondary Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-secondary p-3 copy-hex-code">
+                  <div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div>
+                </div>
+                <div class="col-xs-12 text-secondary-light-1 p-1 copy-hex-code">text-secondary-light-1<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-light-2 p-1 copy-hex-code">text-secondary-light-2<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-light-3 p-1 copy-hex-code">text-secondary-light-3<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-light-4 p-1 copy-hex-code">text-secondary-light-4<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-light-5 p-1 copy-hex-code">text-secondary-light-5<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-light-6 p-1 copy-hex-code">text-secondary-light-6<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-light-7 p-1 copy-hex-code">text-secondary-light-7<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-light-8 p-1 copy-hex-code">text-secondary-light-8<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-light-9 p-1 copy-hex-code">text-secondary-light-9<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 p-3"></div>
+                <div class="col-xs-12 text-secondary-dark-1 p-1 copy-hex-code">text-secondary-dark-1<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-dark-2 p-1 copy-hex-code">text-secondary-dark-2<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-dark-3 p-1 copy-hex-code">text-secondary-dark-3<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-dark-4 p-1 copy-hex-code">text-secondary-dark-4<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-dark-5 p-1 copy-hex-code">text-secondary-dark-5<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-dark-6 p-1 copy-hex-code">text-secondary-dark-6<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-dark-7 p-1 copy-hex-code">text-secondary-dark-7<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-dark-8 p-1 copy-hex-code">text-secondary-dark-8<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-secondary-dark-9 p-1 copy-hex-code">text-secondary-dark-9<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Info Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-info p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-light-1 p-1 copy-hex-code">text-info-light-1<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-light-2 p-1 copy-hex-code">text-info-light-2<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-light-3 p-1 copy-hex-code">text-info-light-3<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-light-4 p-1 copy-hex-code">text-info-light-4<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-light-5 p-1 copy-hex-code">text-info-light-5<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-light-6 p-1 copy-hex-code">text-info-light-6<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-light-7 p-1 copy-hex-code">text-info-light-7<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-light-8 p-1 copy-hex-code">text-info-light-8<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-light-9 p-1 copy-hex-code">text-info-light-9<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 p-3"></div>
+                <div class="col-xs-12 text-info-dark-1 p-1 copy-hex-code">text-info-dark-1<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-dark-2 p-1 copy-hex-code">text-info-dark-2<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-dark-3 p-1 copy-hex-code">text-info-dark-3<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-dark-4 p-1 copy-hex-code">text-info-dark-4<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-dark-5 p-1 copy-hex-code">text-info-dark-5<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-dark-6 p-1 copy-hex-code">text-info-dark-6<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-dark-7 p-1 copy-hex-code">text-info-dark-7<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-dark-8 p-1 copy-hex-code">text-info-dark-8<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-info-dark-9 p-1 copy-hex-code">text-info-dark-9<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Error Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-error p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-light-1 p-1 copy-hex-code">text-error-light-1<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-light-2 p-1 copy-hex-code">text-error-light-2<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-light-3 p-1 copy-hex-code">text-error-light-3<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-light-4 p-1 copy-hex-code">text-error-light-4<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-light-5 p-1 copy-hex-code">text-error-light-5<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-light-6 p-1 copy-hex-code">text-error-light-6<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-light-7 p-1 copy-hex-code">text-error-light-7<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-light-8 p-1 copy-hex-code">text-error-light-8<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-light-9 p-1 copy-hex-code">text-error-light-9<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 p-3"></div>
+                <div class="col-xs-12 text-error-dark-1 p-1 copy-hex-code">text-error-dark-1<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-dark-2 p-1 copy-hex-code">text-error-dark-2<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-dark-3 p-1 copy-hex-code">text-error-dark-3<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-dark-4 p-1 copy-hex-code">text-error-dark-4<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-dark-5 p-1 copy-hex-code">text-error-dark-5<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-dark-6 p-1 copy-hex-code">text-error-dark-6<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-dark-7 p-1 copy-hex-code">text-error-dark-7<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-dark-8 p-1 copy-hex-code">text-error-dark-8<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-error-dark-9 p-1 copy-hex-code">text-error-dark-9<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Success Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-success p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-light-1 p-1 copy-hex-code">text-success-light-1<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-light-2 p-1 copy-hex-code">text-success-light-2<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-light-3 p-1 copy-hex-code">text-success-light-3<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-light-4 p-1 copy-hex-code">text-success-light-4<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-light-5 p-1 copy-hex-code">text-success-light-5<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-light-6 p-1 copy-hex-code">text-success-light-6<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-light-7 p-1 copy-hex-code">text-success-light-7<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-light-8 p-1 copy-hex-code">text-success-light-8<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-light-9 p-1 copy-hex-code">text-success-light-9<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 p-3"></div>
+                <div class="col-xs-12 text-success-dark-1 p-1 copy-hex-code">text-success-dark-1<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-dark-2 p-1 copy-hex-code">text-success-dark-2<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-dark-3 p-1 copy-hex-code">text-success-dark-3<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-dark-4 p-1 copy-hex-code">text-success-dark-4<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-dark-5 p-1 copy-hex-code">text-success-dark-5<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-dark-6 p-1 copy-hex-code">text-success-dark-6<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-dark-7 p-1 copy-hex-code">text-success-dark-7<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-dark-8 p-1 copy-hex-code">text-success-dark-8<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-success-dark-9 p-1 copy-hex-code">text-success-dark-9<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Warning Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-warning p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-light-1 p-1 copy-hex-code">text-warning-light-1<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-light-2 p-1 copy-hex-code">text-warning-light-2<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-light-3 p-1 copy-hex-code">text-warning-light-3<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-light-4 p-1 copy-hex-code">text-warning-light-4<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-light-5 p-1 copy-hex-code">text-warning-light-5<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-light-6 p-1 copy-hex-code">text-warning-light-6<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-light-7 p-1 copy-hex-code">text-warning-light-7<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-light-8 p-1 copy-hex-code">text-warning-light-8<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-light-9 p-1 copy-hex-code">text-warning-light-9<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 p-3"></div>
+                <div class="col-xs-12 text-warning-dark-1 p-1 copy-hex-code">text-warning-dark-1<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-dark-2 p-1 copy-hex-code">text-warning-dark-2<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-dark-3 p-1 copy-hex-code">text-warning-dark-3<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-dark-4 p-1 copy-hex-code">text-warning-dark-4<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-dark-5 p-1 copy-hex-code">text-warning-dark-5<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-dark-6 p-1 copy-hex-code">text-warning-dark-6<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-dark-7 p-1 copy-hex-code">text-warning-dark-7<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-dark-8 p-1 copy-hex-code">text-warning-dark-8<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-warning-dark-9 p-1 copy-hex-code">text-warning-dark-9<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Purple Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-purple p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-light-1 p-1 copy-hex-code">text-purple-light-1<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-light-2 p-1 copy-hex-code">text-purple-light-2<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-light-3 p-1 copy-hex-code">text-purple-light-3<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-light-4 p-1 copy-hex-code">text-purple-light-4<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-light-5 p-1 copy-hex-code">text-purple-light-5<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-light-6 p-1 copy-hex-code">text-purple-light-6<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-light-7 p-1 copy-hex-code">text-purple-light-7<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-light-8 p-1 copy-hex-code">text-purple-light-8<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-light-9 p-1 copy-hex-code">text-purple-light-9<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 p-3"></div>
+                <div class="col-xs-12 text-purple-dark-1 p-1 copy-hex-code">text-purple-dark-1<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-dark-2 p-1 copy-hex-code">text-purple-dark-2<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-dark-3 p-1 copy-hex-code">text-purple-dark-3<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-dark-4 p-1 copy-hex-code">text-purple-dark-4<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-dark-5 p-1 copy-hex-code">text-purple-dark-5<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-dark-6 p-1 copy-hex-code">text-purple-dark-6<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-dark-7 p-1 copy-hex-code">text-purple-dark-7<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-dark-8 p-1 copy-hex-code">text-purple-dark-8<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-purple-dark-9 p-1 copy-hex-code">text-purple-dark-9<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Gray Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-gray p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-light-1 p-1 copy-hex-code">text-gray-light-1<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-light-2 p-1 copy-hex-code">text-gray-light-2<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-light-3 p-1 copy-hex-code">text-gray-light-3<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-light-4 p-1 copy-hex-code">text-gray-light-4<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-light-5 p-1 copy-hex-code">text-gray-light-5<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-light-6 p-1 copy-hex-code">text-gray-light-6<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-light-7 p-1 copy-hex-code">text-gray-light-7<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-light-8 p-1 copy-hex-code">text-gray-light-8<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-light-9 p-1 copy-hex-code">text-gray-light-9<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 p-3"></div>
+                <div class="col-xs-12 text-gray-dark-1 p-1 copy-hex-code">text-gray-dark-1<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-dark-2 p-1 copy-hex-code">text-gray-dark-2<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-dark-3 p-1 copy-hex-code">text-gray-dark-3<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-dark-4 p-1 copy-hex-code">text-gray-dark-4<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-dark-5 p-1 copy-hex-code">text-gray-dark-5<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-dark-6 p-1 copy-hex-code">text-gray-dark-6<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-dark-7 p-1 copy-hex-code">text-gray-dark-7<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-dark-8 p-1 copy-hex-code">text-gray-dark-8<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-gray-dark-9 p-1 copy-hex-code">text-gray-dark-9<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Black Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 text-black-light-1 p-1 copy-hex-code">text-black-light-1<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-black-light-2 p-1 copy-hex-code">text-black-light-2<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-black-light-3 p-1 copy-hex-code">text-black-light-3<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-black-light-4 p-1 copy-hex-code">text-black-light-4<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-black-light-5 p-1 copy-hex-code">text-black-light-5<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-black-light-6 p-1 copy-hex-code">text-black-light-6<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-black-light-7 p-1 copy-hex-code">text-black-light-7<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-black-light-8 p-1 copy-hex-code">text-black-light-8<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-black-light-9 p-1 copy-hex-code">text-black-light-9<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6">
+                <div class="col-xs-12 bg-black p-1 copy-hex-code cursor-pointer"><div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <p class="f-style-italic">only one variation of dark available for black color.</p>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Yellow Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-yellow p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-light-1 p-1 copy-hex-code">text-yellow-light-1<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-light-2 p-1 copy-hex-code">text-yellow-light-2<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-light-3 p-1 copy-hex-code">text-yellow-light-3<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-light-4 p-1 copy-hex-code">text-yellow-light-4<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-light-5 p-1 copy-hex-code">text-yellow-light-5<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-light-6 p-1 copy-hex-code">text-yellow-light-6<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-light-7 p-1 copy-hex-code">text-yellow-light-7<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-light-8 p-1 copy-hex-code">text-yellow-light-8<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-light-9 p-1 copy-hex-code">text-yellow-light-9<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 p-3"></div>
+                <div class="col-xs-12 text-yellow-dark-1 p-1 copy-hex-code">text-yellow-dark-1<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-dark-2 p-1 copy-hex-code">text-yellow-dark-2<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-dark-3 p-1 copy-hex-code">text-yellow-dark-3<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-dark-4 p-1 copy-hex-code">text-yellow-dark-4<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-dark-5 p-1 copy-hex-code">text-yellow-dark-5<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-dark-6 p-1 copy-hex-code">text-yellow-dark-6<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-dark-7 p-1 copy-hex-code">text-yellow-dark-7<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-dark-8 p-1 copy-hex-code">text-yellow-dark-8<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-yellow-dark-9 p-1 copy-hex-code">text-yellow-dark-9<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Blue Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-blue p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-light-1 p-1 copy-hex-code">text-blue-light-1<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-light-2 p-1 copy-hex-code">text-blue-light-2<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-light-3 p-1 copy-hex-code">text-blue-light-3<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-light-4 p-1 copy-hex-code">text-blue-light-4<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-light-5 p-1 copy-hex-code">text-blue-light-5<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-light-6 p-1 copy-hex-code">text-blue-light-6<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-light-7 p-1 copy-hex-code">text-blue-light-7<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-light-8 p-1 copy-hex-code">text-blue-light-8<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-light-9 p-1 copy-hex-code">text-blue-light-9<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 p-3"></div>
+                <div class="col-xs-12 text-blue-dark-1 p-1 copy-hex-code">text-blue-dark-1<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-dark-2 p-1 copy-hex-code">text-blue-dark-2<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-dark-3 p-1 copy-hex-code">text-blue-dark-3<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-dark-4 p-1 copy-hex-code">text-blue-dark-4<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-dark-5 p-1 copy-hex-code">text-blue-dark-5<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-dark-6 p-1 copy-hex-code">text-blue-dark-6<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-dark-7 p-1 copy-hex-code">text-blue-dark-7<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-dark-8 p-1 copy-hex-code">text-blue-dark-8<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-blue-dark-9 p-1 copy-hex-code">text-blue-dark-9<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Red Palette</h2>
+            <!-- <div class="copy" data-copy="">copy hex code.</div> -->
+            <div class="row justify-flex-start gap-2">
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 row cursor-pointer">
+                <div class="col-xs-12 bg-red p-3 copy-hex-code"><div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-light-1 p-1 copy-hex-code">text-red-light-1<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-light-2 p-1 copy-hex-code">text-red-light-2<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-light-3 p-1 copy-hex-code">text-red-light-3<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-light-4 p-1 copy-hex-code">text-red-light-4<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-light-5 p-1 copy-hex-code">text-red-light-5<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-light-6 p-1 copy-hex-code">text-red-light-6<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-light-7 p-1 copy-hex-code">text-red-light-7<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-light-8 p-1 copy-hex-code">text-red-light-8<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-light-9 p-1 copy-hex-code">text-red-light-9<div class="copy-left copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 cursor-pointer">
+                <div class="col-xs-12 p-3"></div>
+                <div class="col-xs-12 text-red-dark-1 p-1 copy-hex-code">text-red-dark-1<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-dark-2 p-1 copy-hex-code">text-red-dark-2<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-dark-3 p-1 copy-hex-code">text-red-dark-3<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-dark-4 p-1 copy-hex-code">text-red-dark-4<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-dark-5 p-1 copy-hex-code">text-red-dark-5<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-dark-6 p-1 copy-hex-code">text-red-dark-6<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-dark-7 p-1 copy-hex-code">text-red-dark-7<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-dark-8 p-1 copy-hex-code">text-red-dark-8<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+                <div class="col-xs-12 text-red-dark-9 p-1 copy-hex-code">text-red-dark-9<div class="copy-right copy d-n"><i class="text-gray-light-1 fa-solid fa-copy"></i></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section sizing d-n">
+          <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Sizing</h2>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Quick Start</h2>
+            <p class="lh-10 text-gray-dark-5">Easily make an element as wide or as tall (relative to its parent) with width and height utilities.</p>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Width</h2>
+            <p class="lh-10 text-gray-dark-5">Includes support for 25%, 50%, 75%, and 100% by default.</p>
+            <div class="bg-gray-light-9 p-1 mt-1 row justify-flex-start">
+              <div class="col-xs-12"><div class="p-1 w-25 bg-gray-light-7">width 25%</div></div>
+              <div class="col-xs-12"><div class="p-1 w-50 bg-gray-light-7">width 50%</div></div>
+              <div class="col-xs-12"><div class="p-1 w-75 bg-gray-light-7">width 75%</div></div>
+              <div class="col-xs-12"><div class="p-1 w-100 bg-gray-light-7">width 100%</div></div>
+            </div>
+          </div>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Height</h2>
+            <p class="lh-10 text-gray-dark-5">Includes support for 25%, 50%, 75%, and 100% by default. </p>
+            <div class="bg-gray-light-9 p-1 mt-1 row justify-flex-start" style="height: 300px;">
+              <div class="col-xs-12 col-lg-3 col-md-5"><div class="h-25 w-50 bg-gray-light-7">height 25%</div></div>
+              <div class="col-xs-12 col-lg-3 col-md-5"><div class="h-50 w-50 bg-gray-light-7">height 50%</div></div>
+              <div class="col-xs-12 col-lg-3 col-md-5"><div class="h-75 w-50 bg-gray-light-7">height 75%</div></div>
+              <div class="col-xs-12 col-lg-3 col-md-5"><div class="h-100 w-50 bg-gray-light-7">height 100%</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="section position d-n">
+          <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Posiiton</h2>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Quick Start</h2>
+            <p class="lh-10 text-gray-dark-5">Shorthand utilities for quickly configuring the position of an element.</p>
+          </div>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Usage</h2>
+            <div class="box-info mt-1 mb-1">
+              <h3 class="fw-5">Position property class is one of:</h3>
+              <div class="props ml-1">
+                <div class="box mt-1">
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">pos -</span>
+                    <span>for classes that set <span class="text-purple">position</span>.</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">pos-r</span>
+                    <span>for classes that set <span class="text-purple">position</span> to <span class="text-purple">relative</span>.</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">pos-a</span>
+                    <span>for classes that set <span class="text-purple">position</span> to <span class="text-purple">absolute</span>.</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">pos-s</span>
+                    <span>for classes that set <span class="text-purple">position</span> to <span class="text-purple">sticky</span>.</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-angle-right text-purple mr-1 fs-xs"></i> 
+                    <span class="text-purple">pos-f</span>
+                    <span>for classes that set <span class="text-purple">position</span> to <span class="text-purple">fixed</span>.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section typography d-n">
+          <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Typography</h2>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Quick Start</h2>
+            <p class="lh-10 text-gray-dark-5">Documentation for typography, headings, body text, and text weight.</p>
+          </div>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Headings</h2>
+            <h2 class="fs-xs">This is heading 1</h2>
+            <h2 class="fs-sm">This is heading 1</h2>
+            <h2 class="fs-md">This is heading 1</h2>
+            <h2 class="fs-lg">This is heading 1</h2>
+            <h2 class="fs-xl">This is heading 1</h2>
+            <h2 class="fs-big">This is heading 1</h2>
+          </div>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Paragraphs</h2>
+            <p class="fs-xs">This is paragraph</p>
+            <p class="fs-sm">This is paragraph</p>
+            <p class="fs-md">This is paragraph</p>
+            <p class="fs-lg">This is paragraph</p>
+            <p class="fs-xl">This is paragraph</p>
+            <p class="fs-big">This is paragraph</p>
+          </div>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Font Weight</h2>
+            <p class="fs-sm fw-1">This is a sample text</p>
+            <p class="fs-sm fw-2">This is a sample text</p>
+            <p class="fs-sm fw-3">This is a sample text</p>
+            <p class="fs-sm fw-4">This is a sample text</p>
+            <p class="fs-sm fw-5">This is a sample text</p>
+            <p class="fs-sm fw-6">This is a sample text</p>
+            <p class="fs-sm fw-7">This is a sample text</p>
+            <p class="fs-sm fw-8">This is a sample text</p>
+            <p class="fs-sm fw-9">This is a sample text</p>
+          </div>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Font Style</h2>
+            <p class="fs-sm f-style-normal">This is a normal text</p>
+            <p class="fs-sm f-style-italic">This is a italic text</p>
+            <p class="fs-sm f-style-oblique">This is a oblique text</p>
+          </div>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Text Decoration</h2>
+            <p class="fs-sm td-under">This is underline decoration</p>
+            <p class="fs-sm td-through">This is line through decoration</p>
+            <p class="fs-sm td-upper">This is upper decoration</p>
+          </div>
+          <div class="info mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Text Format</h2>
+            <p class="fs-sm t-upper">This is an upper text</p>
+            <p class="fs-sm t-lower">This is a lower text</p>
+            <p class="fs-sm t-caps">This is a capitalized text</p>
+          </div>
+        </div>
+        <div class="section resets d-n">
+          <h2 class="mb-1 fs-xl text-info ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Resets</h2>
+          <div class="box mb-1">
+            <h2 class="mb-1 fs-md text-gray-dark-7 ff-secondary"><i class="fa-solid fa-link fs-sm text-gray-light-4 text-hover-gray"></i> Default Properties Resets</h2>
+            <div class="resets mb-2">
+              <h3 class="fw-5 text-gray-dark-6 d-f align-items-center"><i class="mr-1 fa-solid fa-circle text-info fs-xs"></i> <span>Body</span> </h3>
+              <p class="ml-3 mt-1"><i class="fa-solid fa-chevron-right fs-xs text-gray"></i> padding and margins have been removed from the body and set to be 0.</p>
+              <p class="ml-3"><i class="fa-solid fa-chevron-right fs-xs text-gray"></i> Body font family is set to <span class="text-purple">poppins</span>.</p>
+            </div>
+            <div class="resets mb-2">
+              <h3 class="fw-5 text-gray-dark-6 d-f align-items-center"><i class="mr-1 fa-solid fa-circle text-info fs-xs"></i> * & pesudo classes</h3>
+              <p class="ml-3 mt-1"><i class="fa-solid fa-chevron-right fs-xs text-gray"></i> padding and margins have been removed from all the elements and set to be 0.</p>
+              <p class="ml-3"><i class="fa-solid fa-chevron-right fs-xs text-gray"></i> <span class="text-purple">box sizing</span> property has been set to <span class="text-purple">border-box</span></p>
+            </div>
+            <div class="resets mb-2">
+              <h3 class="fw-5 text-gray-dark-6 d-f align-items-center"><i class="mr-1 fa-solid fa-circle text-info fs-xs"></i> Images</h3>
+              <p class="ml-3 mt-1"><i class="fa-solid fa-chevron-right fs-xs text-gray"></i> <span class="text-purple">max width</span> property has been set for images to <span class="text-purple">100%</span></p>
+              <p class="ml-3"><i class="fa-solid fa-chevron-right fs-xs text-gray"></i> this is helpful when using <span class="text-purple">grid</span> or <span class="text-purple">flex</span></p>
+            </div>
+            <div class="resets mb-2">
+              <h3 class="fw-5 text-gray-dark-6 d-f align-items-center"><i class="mr-1 fa-solid fa-circle text-info fs-xs"></i> Lists</h3>
+              <p class="ml-3 mt-1"><i class="fa-solid fa-chevron-right fs-xs text-gray"></i> <span class="text-purple">List style</span> has been removed from the <span class="text-purple">ul</span></p>
+              <p class="ml-3"><i class="fa-solid fa-chevron-right fs-xs text-gray"></i> <span class="text-purple">padding-left</span> of the ul has been removed too.</p>
+            </div>
+            <div class="resets mb-2">
+              <h3 class="fw-5 text-gray-dark-6 d-f align-items-center"><i class="mr-1 fa-solid fa-circle text-info fs-xs"></i> Links</h3>
+              <p class="ml-3 mt-1"><i class="fa-solid fa-chevron-right fs-xs text-gray"></i> <span class="text-purple">text decoration</span> has been removed from the link</p>
+              <p class="ml-3"><i class="fa-solid fa-chevron-right fs-xs text-gray"></i> <span class="text-purple">active, focused, visited </span> links color set to be inherited from it parent.</p>
+            </div>
+            <div class="resets">
+              <h3 class="fw-5 text-gray-dark-6 d-f align-items-center"><i class="mr-1 fa-solid fa-circle text-info fs-xs"></i> Input, Buttons and input::placeholder</h3>
+              <p class="ml-3 mt-1"><i class="fa-solid fa-chevron-right fs-xs text-gray"></i> <span class="text-purple">font family</span> for those elements set to be inherited.</p>
+              <p class="ml-3"><i class="fa-solid fa-chevron-right fs-xs text-gray"></i> <span class="text-purple">border, background-color, outline</span> have been removed from them too.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

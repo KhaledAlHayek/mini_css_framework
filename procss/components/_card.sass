@@ -1,0 +1,19 @@
+@use "sass:math"
+
+.card
+  box-shadow: $base-box-shadow
+  border-radius: math.div($base-border-radius, 4)
+  padding: $base-padding * 1.5
+  .card-title
+    font-size: $font-size-lg
+  .card-subtitle
+    margin-bottom: $base-margin
+    color: #9a9a9a
+  .card-body
+    font-weight: 400
+    color: #606060
+  .card-link
+    display: inline-block
+    margin-top: $base-margin * 2
+  > .card-link + .card-link
+    margin-left: $base-margin

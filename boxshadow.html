@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadow Generator</title>
+  <link rel="stylesheet" href="build/css/index.css">
+  <link rel="stylesheet" href="build/css/index.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="js/boxshadow.js" type="module" defer></script>
+</head>
+<body>
+  <section class="box-shadow-gen">
+    <div class="row h-100 customization-holder">
+      <div class="customization col-xs-12 col-lg-3 control">
+        <div class="toggle-menu toggle-control cursor-pointer text-gray text-hover-secondary d-f justify-center align-items-center" data-menu="control">
+          <i class="fa-solid fa-square-caret-right fs-lg"></i>
+        </div>
+        <h2 class="border-b p-3 text-secondary fs-md">Box Shadow</h2>
+        <div class="box-appearance">
+          <div class="toggle-appearance d-f justify-space-between align-items-center p-3">
+            <div class="checkbox">
+              <input type="checkbox" id="inset" class="shadow-style" name="inset">
+              <label for="inset">Inset</label>
+            </div>
+            <div class="reset">
+              <div class="btn btn-error pt-1 pb-1 br-1 text-white fw-5 reset-btn">Reset</div>
+            </div>
+          </div>
+          <div class="d-f justify-space-between align-items-center p-3">
+            <h4>Shadow color</h4>
+            <input type="color" class="cursor-pointer shadow-color">
+          </div>  
+          <div class="horizantal-offset p-3">
+            <div class="offset-title d-f justify-space-between align-items-center">
+              <div class="title">
+                <h4>Horizantal offset (px)</h4>
+              </div>
+              <div class="hz-number">
+                <input type="text" class="fw-5 align-c br-2 hz-offset">
+              </div>
+            </div>
+            <div class="hz-range w-100 mt-4 range-selector">
+              <input type="range" value="2" data-target="hz-offset" data-style="x" class="bg-secondary" min="0" max="100">
+            </div>
+          </div>
+          <div class="vertical-offset p-3">
+            <div class="offset-title d-f justify-space-between align-items-center">
+              <div class="title">
+                <h4>Vertical offset (px)</h4>
+              </div>
+              <div class="vr-number">
+                <input type="text" class="fw-5 align-c br-2 vr-offset">
+              </div>
+            </div>
+            <div class="vr-range w-100 mt-4 range-selector">
+              <input type="range" value="2" data-target="vr-offset" data-style="y" class="bg-secondary" min="0" max="100">
+            </div>
+          </div>
+          <div class="blur-radius p-3">
+            <div class="offset-title d-f justify-space-between align-items-center">
+              <div class="title">
+                <h4>Blur radius (px)</h4>
+              </div>
+              <div class="blur-number">
+                <input type="text" class="fw-5 align-c br-2 blur-offset">
+              </div>
+            </div>
+            <div class="blur-range w-100 mt-4 range-selector">
+              <input type="range" value="10" class="bg-secondary" data-style="blur" data-target="blur-offset" min="0" max="100">
+            </div>
+          </div>
+          <div class="spread-radius p-3">
+            <div class="offset-title d-f justify-space-between align-items-center">
+              <div class="title">
+                <h4>Spread radius (px)</h4>
+              </div>
+              <div class="spread-number">
+                <input type="text" class="fw-5 align-c br-2 spread-offset">
+              </div>
+            </div>
+            <div class="spread-range w-100 mt-4 range-selector">
+              <input type="range" value="0" class="bg-secondary" data-style="spread" data-target="spread-offset" min="0" max="100">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pos-r bg-secondary-light-9 col-xs-12 col-md-12 col-lg-6 preview d-f align-items-center justify-center">
+        <div class="copy-demo-code pos-a btn-secondary text-white fw-6">Copy CSS Code</div>
+        <div class="demo br-3">
+        </div>
+      </div>
+      <div class="customization col-xs-12 col-lg-3 shape">
+        <div class="toggle-menu toggle-shape cursor-pointer text-gray text-hover-secondary d-f justify-center align-items-center" data-menu="shape">
+          <i class="fa-solid fa-square-caret-left fs-lg"></i>
+        </div>
+        <h2 class="border-b p-3 text-secondary fs-md">Box Properties</h2>
+        <div class="box-appearance">
+          <div class="d-f justify-space-between align-items-center p-3 border-b-8">
+            <h4 class="fw-6">Background color</h4>
+            <input type="color" class="cursor-pointer" data-box="demo-box" data-style="bg-color">
+          </div>
+          <div class="d-f justify-space-between align-items-center p-3 border-b-8">
+            <h4 class="fw-6">Border color</h4>
+            <input type="color" class="cursor-pointer" data-box="demo-box" data-style="border-color">
+          </div>
+          <div class="demo-border-radius p-3">
+            <div class="offset-title d-f justify-space-between align-items-center">
+              <div class="title">
+                <h4>Border radius (px)</h4>
+              </div>
+              <div class="demo-border-radius-number">
+                <input type="text" class="fw-5 align-c br-2 demo-border-radius-offset">
+              </div>
+            </div>
+            <div class="demo-border-radius-range w-100 mt-4 range-selector-demo">
+              <input type="range" class="bg-secondary" data-target="demo-border-radius-offset" data-property="borderRadius" min="0" max="250">
+            </div>
+          </div>
+          <div class="demo-width p-3">
+            <div class="offset-title d-f justify-space-between align-items-center">
+              <div class="title">
+                <h4>Width (px)</h4>
+              </div>
+              <div class="demo-width-number">
+                <input type="text" class="fw-5 align-c br-2 demo-width-offset">
+              </div>
+            </div>
+            <div class="demo-width-range w-100 mt-4 range-selector-demo">
+              <input type="range" class="bg-secondary" data-target="demo-width-offset" data-property="width" min="100" max="500">
+            </div>
+          </div>
+          <div class="demo-height p-3">
+            <div class="offset-title d-f justify-space-between align-items-center">
+              <div class="title">
+                <h4>Height (px)</h4>
+              </div>
+              <div class="demo-height-number">
+                <input type="text" class="fw-5 align-c br-2 demo-height-offset">
+              </div>
+            </div>
+            <div class="demo-height-range w-100 mt-4 range-selector-demo">
+              <input type="range" class="bg-secondary" data-target="demo-height-offset" data-property="height" min="100" max="500">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

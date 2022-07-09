@@ -1,0 +1,22 @@
+%flex-layout
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  box-sizing: border-box
+
+.navbar
+  @extend %flex-layout
+  padding: $base-padding $base-padding * 2
+  box-shadow: $base-box-shadow
+  z-index: 10
+  position: relative
+  .nav-title
+    font-size: $font-size-lg
+  .container
+    @extend %flex-layout
+
+@each $key, $value in $colors
+  .navbar-#{$key}
+    @extend .navbar
+    background-color: $value

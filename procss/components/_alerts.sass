@@ -1,0 +1,20 @@
+@mixin alert($bg-color: #e2e2e2, $border-color: #ccc)
+  width: 100%
+  padding: 10px 20px
+  border-radius: 6px
+  background-color: $bg-color
+  border: 1px solid $border-color
+  margin-block: 7px
+  text-align: center
+
+.alert
+  @include alert
+
+@each $key, $value in $colors
+  @if($value != white)
+    .alert-#{$key}
+      @include alert($value, lighten($value, 5))
+    .alert-outlined-#{$key}
+      @include alert(#fff, $value)
+      color: $value
+      font-weight: 600

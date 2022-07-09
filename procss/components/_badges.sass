@@ -1,0 +1,21 @@
+@mixin badge($bg-color: #e2e2e2, $border-color: #ccc)
+  width: fit-content
+  padding: 6px 2px
+  border-radius: 6px
+  background-color: $bg-color
+  border: 1px solid $border-color
+  margin-inline: 3px
+  text-align: center
+  line-height: 1
+  display: inline-block
+
+.badge
+  @include badge
+
+@each $key, $value in $colors
+  .badge-#{$key}
+    @include badge($value, lighten($value, 5))
+  .badge-outlined-#{$key}
+    @include badge(#fff, $value)
+    color: $value
+    font-weight: 600
